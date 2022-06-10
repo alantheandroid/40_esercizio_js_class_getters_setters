@@ -4,6 +4,20 @@ class Person {
     this.surname = lastName;
     this.years = age;
   }
+  /* GETTERS */
+  get firstName() {
+    return this.name;
+  }
+  get lastName() {
+    return this.surname;
+  }
+  get age() {
+    return this.years;
+  }
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  }
+  /* SETTERS */
   set firstName(value) {
     this.name = value;
   }
@@ -12,9 +26,6 @@ class Person {
   }
   set age(number) {
     this.years = number;
-  }
-  get fullName() {
-    return `${this.name} ${this.surname}`;
   }
 }
 
